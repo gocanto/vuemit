@@ -1,0 +1,24 @@
+{
+    "license": "MIT",
+    "version": "1.0.0",
+    "author": "Gustavo Ocanto",
+    "name": "vuemit",
+    "main": "Vuemit.js",
+    "description": "The smallest Vue.js events handler.",
+    "homepage": "https://github.com/gocanto/google-autocomplete",
+
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gocanto/vuemit.git"
+    },
+
+    "keywords": [
+        "vue",
+        "events",
+        "handler"
+    ],
+
+    "devDependencies": {
+        "vue": "^2.*"
+    }
+}
