@@ -34,11 +34,23 @@ This process will create a ***Vuemit*** variable as globally for you to use with
 
 After importing it, you will be able to either ***fire*** an event or ***listen*** for one. Examples, 
 
+----------
 
-- Fire an event: To fire an event you will have to pass two parameters to the method, being the first one the event name, and the second one the required data if needed. As so: ```Vuemit.fire('setAddress', {name: 'gocanto'});```. See this <a href="https://github.com/gocanto/google-autocomplete/blob/master/src/js/Components/googleAutocomplete.vue#L70">demo</a> for more information.
+***Fire an event:*** To fire an event you will have to pass two parameters to the method, being the first one the event name, and the second one the required data if needed. As so: 
 
-- Listen to events: To listen to an event you will have to be able to know the name of the fired event and the callback that will handle the information according to the event been fired. As so: ```Vuemit.listen('setAddress', callback);```. See this <a href="https://github.com/gocanto/google-autocomplete/blob/master/src/js/demo.js#L23">demo</a> for more information.
+```Vuemit.fire('setAddress', {name: 'gocanto'});```. 
 
+See this <a href="https://github.com/gocanto/google-autocomplete/blob/master/src/js/Components/googleAutocomplete.vue#L70">demo</a> for more information.
+
+
+
+***Listen to events:*** To listen to an event you will have to be able to know the name of the fired event and the callback that will handle the information according to the event been fired. As so: 
+
+```Vuemit.listen('setAddress', callback);```. 
+
+See this <a href="https://github.com/gocanto/google-autocomplete/blob/master/src/js/demo.js#L23">demo</a> for more information.
+
+----------
 
 # Contributing
 
