@@ -77,7 +77,7 @@ window.Vuemit = new class
 	 * @param {Object} event
 	 * @return {Void}
 	 */
-	removeListenersFor(event)
+	removeListenersFrom(event)
 	{
 		this.vue.$off(event);
 	}
