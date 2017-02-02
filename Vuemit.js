@@ -46,18 +46,8 @@ window.Vuemit = new class
 	{
 		this.vue.$on(event, callback);
 	}
-        /**
-	 * clear a given event.
-	 *
-	 * @param {Object} event
-	 * @param {Function} callback
-	 * @return {Void}
-	 */
-	clear(event, callback)
-	{
-		this.vue.$off(event, callback);
-	}
-        /**
+
+	/**
 	 * Listens for a given event for once time only.
 	 *
 	 * @param {Object} event
@@ -67,5 +57,38 @@ window.Vuemit = new class
 	once(event, callback)
 	{
 		this.vue.$once(event, callback);
+	}
+
+     /**
+	 * Removes listeners for a given event and callback.
+	 *
+	 * @param {Object} event
+	 * @param {Function} callback
+	 * @return {Void}
+	 */
+	remove(event, callback)
+	{
+		this.vue.$off(event, callback);
+	}
+
+	/**
+	 * Removes all listeners for a given event.
+	 *
+	 * @param {Object} event
+	 * @return {Void}
+	 */
+	removeListenersFor(event)
+	{
+		this.vue.$off(event);
+	}
+
+	/**
+	 * Removes all event listeners.
+	 *
+	 * @return {Void}
+	 */
+	removeAll()
+	{
+		this.vue.$off();
 	}
 }
