@@ -32,13 +32,13 @@ This process will create a ***Vuemit*** variable as globally for you to use with
 <a href="https://github.com/gocanto/vuemit/blob/master/LICENSE">See Demo</a>
 
 
-After importing it, you will be able to either ***fire*** an event or ***listen*** for one. Examples, 
+After importing it, you will be able to either ***fire***, ***listen***, ***listen once*** or ***clear*** an event. Examples, 
 
 ----------
 
 ***Fire an event:*** To fire an event you will have to pass two parameters to the method, being the first one the event name, and the second one the required data if needed. As so: 
 
-```Vuemit.fire('setAddress', {name: 'gocanto'});```. 
+```Vuemit.fire('setAddress', {name: 'gocanto'});```
 
 See this <a href="https://github.com/gocanto/google-autocomplete/blob/master/src/js/Components/googleAutocomplete.vue#L70">demo</a> for more information.
 
@@ -46,9 +46,26 @@ See this <a href="https://github.com/gocanto/google-autocomplete/blob/master/src
 
 ***Listen to events:*** To listen to an event you will have to be able to know the name of the fired event and the callback that will handle the information according to the event been fired. As so: 
 
-```Vuemit.listen('setAddress', callback);```. 
+```Vuemit.listen('setAddress', callback);```
 
 See this <a href="https://github.com/gocanto/google-autocomplete/blob/master/src/js/demo.js#L23">demo</a> for more information.
+
+
+***Listen only once:*** This option will listen for an event and trigger only once, and will then be removed. As so: 
+
+```Vuemit.once('setAddress', callback);``` 
+
+
+***Clear an / all event(s):*** When called with an event name and callback, it will clear all listeners for that event and then action the callback, or if just adding event name, it will clear all listeners for that event, not passing in any parameters will clear ALL events. As so: 
+
+```
+    Vuemit.clear('setAddress', callback);
+
+    Vuemit.clear('setAddress');
+
+    Vuemit.clear();
+
+```
 
 ----------
 
