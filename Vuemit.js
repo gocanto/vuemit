@@ -54,7 +54,7 @@ window.Vuemit = new class
 	 * @param {Function} callback
 	 * @return {Void}
 	 */
-	once(event, callback)
+	listenOnce(event, callback)
 	{
 		this.vue.$once(event, callback);
 	}
