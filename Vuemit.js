@@ -46,4 +46,26 @@ window.Vuemit = new class
 	{
 		this.vue.$on(event, callback);
 	}
+        /**
+	 * clear a given event.
+	 *
+	 * @param {Object} event
+	 * @param {Function} callback
+	 * @return {Void}
+	 */
+	clear(event, callback)
+	{
+		this.vue.$off(event, callback);
+	}
+        /**
+	 * Listens for a given event for once time only.
+	 *
+	 * @param {Object} event
+	 * @param {Function} callback
+	 * @return {Void}
+	 */
+	once(event, callback)
+	{
+		this.vue.$once(event, callback);
+	}
 }
