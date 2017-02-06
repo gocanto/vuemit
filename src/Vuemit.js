@@ -6,7 +6,7 @@
  * @license https://github.com/gocanto/vuemit/blob/master/LICENSE
  */
 
-window.Vuemit = new class
+class Vuemit
 {
 	/**
 	 * Creates a new Event instance.
@@ -92,3 +92,5 @@ window.Vuemit = new class
 		this.vue.$off();
 	}
 }
+
+module.exports = new Vuemit;
