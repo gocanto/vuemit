@@ -24,7 +24,7 @@ npm install vue --save
 You will have to require this library within your entry point or your bootstrap file, as so: 
 
 ```js
-require('vuemit');
+window.Vuemit = require('vuemit');
 ```
 
 This process will create a ***Vuemit*** variable as globally for you to use it within any files needed.
