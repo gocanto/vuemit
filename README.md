@@ -29,7 +29,7 @@ window.Vuemit = require('vuemit');
 
 This process will create a ***Vuemit*** variable as globally for you to use it within any files needed.
 
-<a href="https://github.com/gocanto/vuemit/blob/master/LICENSE">See Demo</a>
+<a href="https://github.com/gocanto/google-autocomplete/blob/master/src/js/Components/googleAutocomplete.vue#L70">See Demo</a>
 
 
 After importing it, you will be able to fire, listen, listen once, remove, remove listeners from a particular event or remove all listeners. 
