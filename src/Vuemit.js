@@ -6,6 +6,8 @@
  * @license https://github.com/gocanto/vuemit/blob/master/LICENSE
  */
 
+import Vue from 'vue';
+
 class Vuemit
 {
 	/**
