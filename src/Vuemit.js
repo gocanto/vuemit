@@ -35,7 +35,7 @@ class Vuemit
 	fire(event, data = null)
 	{
 		if (Array.isArray(event)) {
-			return event.each((e) => {
+			return event.forEach((e) => {
 				this.vue.$emit(e, data);
 			})
 		}
@@ -53,7 +53,7 @@ class Vuemit
 	listen(event, callback)
 	{
 		if (Array.isArray(event)) {
-			return event.each((e) => {
+			return event.forEach((e) => {
 				this.vue.$on(e, callback);
 			})
 		}
@@ -71,7 +71,7 @@ class Vuemit
 	listenOnce(event, callback)
 	{
 		if (Array.isArray(event)) {
-			return event.each((e) => {
+			return event.forEach((e) => {
 				this.vue.$once(e, callback);
 			})
 		}
@@ -89,7 +89,7 @@ class Vuemit
 	remove(event, callback)
 	{
 		if (Array.isArray(event)) {
-			return event.each((e) => {
+			return event.forEach((e) => {
 				this.vue.$off(e, callback);
 			})
 		}
@@ -106,7 +106,7 @@ class Vuemit
 	removeListenersFrom(event)
 	{
 		if (Array.isArray(event)) {
-			return event.each((e) => {
+			return event.forEach((e) => {
 				this.vue.$off(e);
 			})
 		}
