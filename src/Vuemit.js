@@ -26,7 +26,7 @@ class Vuemit
 	}
 
 	/**
-	 * Fires a given event.
+	 * Fires a given event/s.
 	 *
 	 * @param {Object} event
 	 * @param {Object} data
@@ -34,11 +34,17 @@ class Vuemit
 	 */
 	fire(event, data = null)
 	{
+		if (Array.isArray(event)) {
+			return event.forEach((e) => {
+				this.vue.$emit(e, data);
+			})
+		}
+
 		this.vue.$emit(event, data);
 	}
 
 	/**
-	 * Listens for a given event.
+	 * Listens for a given event/s.
 	 *
 	 * @param {Object} event
 	 * @param {Function} callback
@@ -46,11 +52,17 @@ class Vuemit
 	 */
 	listen(event, callback)
 	{
+		if (Array.isArray(event)) {
+			return event.forEach((e) => {
+				this.vue.$on(e, callback);
+			})
+		}
+
 		this.vue.$on(event, callback);
 	}
 
 	/**
-	 * Listens for a given event for once time only.
+	 * Listens for a given event/s for one time only.
 	 *
 	 * @param {Object} event
 	 * @param {Function} callback
@@ -58,11 +70,17 @@ class Vuemit
 	 */
 	listenOnce(event, callback)
 	{
+		if (Array.isArray(event)) {
+			return event.forEach((e) => {
+				this.vue.$once(e, callback);
+			})
+		}
+
 		this.vue.$once(event, callback);
 	}
 
-     /**
-	 * Removes listeners for a given event and callback.
+	/**
+	 * Removes listeners for a given event/s and callback.
 	 *
 	 * @param {Object} event
 	 * @param {Function} callback
@@ -70,18 +88,30 @@ class Vuemit
 	 */
 	remove(event, callback)
 	{
+		if (Array.isArray(event)) {
+			return event.forEach((e) => {
+				this.vue.$off(e, callback);
+			})
+		}
+
 		this.vue.$off(event, callback);
 	}
 
 	/**
-	 * Removes all listeners for a given event.
+	 * Removes all listeners for a given event/s.
 	 *
 	 * @param {Object} event
 	 * @return {Void}
 	 */
 	removeListenersFrom(event)
 	{
-		this.vue.$off(event);
+		if (Array.isArray(event)) {
+			return event.forEach((e) => {
+				this.vue.$off(e);
+			})
+		}
+
+		this.vue.$off(event;
 	}
 
 	/**
