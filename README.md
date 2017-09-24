@@ -35,7 +35,6 @@ Now you will have a global ***Vuemit*** variable which you can use anywhere in y
 | this.$off()  | Vuemit.remove()              | ***Remove listeners for an event/s:*** takes 2 arguments ('event-name', callback) |
 | this.$off()  | Vuemit.removeListenersFrom() | ***Remove listeners from an event/s:*** takes 1 arguments ('event-name')          |
 | this.$off()  | Vuemit.removeAll()           | ***Remove all event listeners:*** takes no arguments                              |
-|              |                              |                                                                                   |
 
 - Vue started to support events array from v2.2.0+ except `$emit` & `$once` but with Vuemit you can use events-names as an array with all the methods except `removeAll()` which takes no arguments.
 
