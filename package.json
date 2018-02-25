@@ -18,7 +18,7 @@
     "events",
     "handler"
   ],
-  "dependencies": {
+  "devDependencies": {
     "ava": "^0.18.0",
     "babel-preset-env": "^1.6",
     "babel-preset-stage-3": "^6.24.1",
