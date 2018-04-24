@@ -10,7 +10,7 @@ Vuemit is a tiny library to work with events on Vue.js. Its aim is to keeping si
 # Installation
 
 ```js
-npm install vue vuemit --save
+npm install vuemit --save
 ```
 
 # Gettings started
@@ -36,7 +36,7 @@ Now you will have a global ***Vuemit*** variable which you can use anywhere in y
 | this.$off()  | Vuemit.removeListenersFrom() | ***Remove listeners from an event/s:*** takes 1 arguments ('event-name')          |
 | this.$off()  | Vuemit.removeAll()           | ***Remove all event listeners:*** takes no arguments                              |
 
-- Vue started to support events array from v2.2.0+ except `$emit` & `$once` but with Vuemit you can use events-names as an array with all the methods except `removeAll()` which takes no arguments.
+- Vue started to support events array from **v2.2.0+** except `$emit` & `$once` but with Vuemit you can use events-names as an array with all the methods except `removeAll()` which takes no arguments.
 
 ```js
 // fire multiple events with a shared payload
