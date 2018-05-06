@@ -6,7 +6,7 @@
  * @license https://github.com/gocanto/vuemit/blob/master/LICENSE
  */
 
-import Vue from 'vue'
+const Vue = require('vue')
 
 class Vuemit
 {
