@@ -19,14 +19,14 @@
     "handler"
   ],
   "peerDependecies": {
-    "vue": "^2.0.0"
-  }, 
+    "vue": "^2.6.10"
+  },
   "devDependencies": {
-    "ava": "^0.18.0",
-    "babel-preset-env": "^1.6",
+    "ava": "^2.4.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1",
-    "babel-register": "^6.22.0",
-    "nyc": "^10.1.2"
+    "babel-register": "^6.26.0",
+    "nyc": "^14.1.1"
   },
   "ava": {
     "files": [
