@@ -1,8 +1,8 @@
 # Vuemit
 
 <a href="https://github.com/gocanto/google-autocomplete/blob/master/src/js/Components/googleAutocomplete.vue#L70"><img src="https://img.shields.io/badge/online-demo-green.svg" alt="Demo"></a>
-<a href="https://www.npmjs.com/package/google-autocomplete-vue"><img src="https://img.shields.io/npm/v/vuemit.svg" alt="Version"></a>
-<a href="https://www.npmjs.com/package/google-autocomplete-vue"><img src="https://img.shields.io/npm/dt/vuemit.svg" alt="Downloads"></a>
+<a href="https://www.npmjs.com/package/vuemit"><img src="https://img.shields.io/npm/v/vuemit.svg" alt="Version"></a>
+<a href="https://www.npmjs.com/package/vuemit"><img src="https://img.shields.io/npm/dt/vuemit.svg" alt="Downloads"></a>
 <a href="https://github.com/gocanto/vuemit/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/easiest-js-validator.svg" alt="License"></a>
 
 Vuemit is a tiny library to work with events on Vue.js. Its aim is to keeping simple the fact of sharing information between any number of components.
